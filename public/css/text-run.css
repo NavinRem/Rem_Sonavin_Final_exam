@@ -1,0 +1,38 @@
+.text-run-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  height: 95vh;
+}
+
+.preview-dis {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.btn-technical {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-controller {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+.btn-controller button {
+  color: aliceblue;
+}
+.btn-controller button:hover {
+  color: black;
+}
+
+.full-screen-btn {
+  width: 30px;
+  border-radius: 5px;
+  background-color: fuchsia;
+}

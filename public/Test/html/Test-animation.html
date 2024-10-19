@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test -1</title>
+    <style>
+      div {
+        background-color: blue;
+      }
+      div div:nth-child(even) {
+        background-color: aqua;
+      }
+      div div:nth-child(odd) {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 400px; padding: 30px">
+      <div style="width: 100%">
+        This div will fill the entire width of its parent.
+      </div>
+      <div style="width: auto">
+        This div will adjust its width based on its content.
+      </div>
+      <div style="width: inherit">
+        This div will inherit the width from its parent.
+      </div>
+      <div style="width: fit-content">
+        This div will fit its content, but won't exceed the parent's width.
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+.sign-in-block {
+  height: 100vh;
+  padding: var(--about-padding);
+  display: flex;
+}
+.sign-in-part {
+  width: 70%;
+  box-sizing: border-box;
+  padding: var(--about-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-input {
+  text-align: center;
+}
+.input-board {
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.8);
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.input-block {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 300px;
+  height: 20px;
+  background-color: rgb(255, 181, 255);
+  border: 1px solid;
+  border-radius: 30px;
+  padding: 0 10px;
+}
+
+.sign-in-bg {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.detail-input {
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.detail-input div {
+  display: flex;
+  flex-direction: column;
+}
+
+.pw-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.remember-pw {
+  display: flex;
+}
+.pw-part a,
+.extra-sign-up a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.sign-in-submit {
+  display: flex;
+  justify-content: center;
+}
+
+.sign-in-btn {
+  animation: none;
+}
+.sign-in-other {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(240, 248, 255, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  height: 250px;
+  box-sizing: border-box;
+}
+.sign-in-other button {
+  width: 100%;
+}
+
+i {
+  font-size: 15px;
+}
+
+.extra-sign-up {
+  text-align: center;
+}

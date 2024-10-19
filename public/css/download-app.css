@@ -1,0 +1,27 @@
+.app-download-block {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.download-detail {
+  background-color: rgba(240, 248, 255, 0.8);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 300px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.grp-btn-download {
+  display: flex;
+  flex-direction: column;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+}
+.grp-btn-download button {
+  width: 250px;
+  animation: none;
+}

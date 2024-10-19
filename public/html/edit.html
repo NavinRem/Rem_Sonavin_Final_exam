@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Texto - Edit</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/edit.css" />
+
+    <link rel="stylesheet" href="/fontawesome-free-6.6.0-web" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/06740da9da.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="nav-bar">
+        <a href="../html/index.html"
+          ><span id="logo-texto-home" class="pacifico-regular">Texto</span></a
+        >
+        <ul>
+          <a href="./index.html">
+            <li>Home</li>
+          </a>
+          <a href="./edit.html">
+            <li>Edit</li>
+          </a>
+          <a href="./folder.html">
+            <li>Folder</li>
+          </a>
+          <a href="./about.html">
+            <li>About</li>
+          </a>
+          <a href="./contact.html">
+            <li>Contact</li>
+          </a>
+        </ul>
+        <div>
+          <a href="../html/download-app.html"
+            ><button class="non-imp-btn">Download App</button></a
+          >
+          <div class="profile"></div>
+        </div>
+      </div>
+      <div class="edit-display">
+        <div class="text-input">
+          <textarea
+            id="text-input"
+            name="message"
+            rows="15"
+            cols="30"
+            placeholder="Enter your text here"
+          ></textarea>
+          <button class="non-imp-btn submit-btn" id="setTextToPreview">
+            Set
+          </button>
+        </div>
+        <div class="edit-part">
+          <div class="text-preview">
+            <p id="text-run">
+              <span id="run-text">You preview your input text here</span>
+            </p>
+            <!-- <span id="text-run">Lorem ipsum dolor sit amet.</span> -->
+          </div>
+          <div id="theme-decor">
+            <button class="th-btn" id="theme-1">Theme</button>
+            <button class="th-btn" id="theme-2">Theme</button>
+            <button class="th-btn" id="theme-3">Theme</button>
+            <button class="th-btn" id="theme-4">Theme</button>
+            <button class="th-btn" id="theme-5">Theme</button>
+            <button class="th-btn" id="theme-6">Theme</button>
+            <button class="th-btn" id="theme-7">Theme</button>
+            <button class="th-btn" id="theme-8">Theme</button>
+            <button class="th-btn" id="theme-9">Theme</button>
+            <button class="th-btn" id="theme-10">Theme</button>
+            <button id="theme-11">Add <i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="edit-tool">
+            <div>
+              <h3>Decor</h3>
+              <div>
+                <label for="font-size"
+                  >Font Size : <span id="font-size-display">12px</span></label
+                >
+                <input
+                  type="range"
+                  name="font-size"
+                  id="font-size"
+                  min="0"
+                  max="100"
+                  value="12"
+                />
+              </div>
+              <div>
+                <label for="font-color"
+                  >Font Color : <span id="text-color"></span
+                ></label>
+                <input
+                  type="color"
+                  value="#000000"
+                  name="font-color"
+                  id="font-color"
+                />
+              </div>
+              <div>
+                <label for="font-family">Font Family</label>
+                <select name="font-family" id="font-family">
+                  <option value="Nunito">Nunito</option>
+                  <option value="Times New Roman">Times New Roman</option>
+                  <option value="Arial">Arial</option>
+                  <option value="Cambria">Cambria</option>
+                </select>
+              </div>
+              <div>
+                <label for="bg-color"
+                  >Background Color : <span id="bg-text"></span
+                ></label>
+                <input
+                  type="color"
+                  name="bg-color"
+                  id="bg-color"
+                  value="#ffffff"
+                />
+              </div>
+              <div>
+                <label for="font-style">Font Style</label>
+                <select name="font-style" id="font-style">
+                  <option value="normal">Normal</option>
+                  <option value="bold">Bold</option>
+                  <option value="italic">Italic</option>
+                  <option value="underline">Underline</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <h3>Technical</h3>
+              <div>
+                <label for="text-speed"
+                  >Text Speed : <span id="text-speed-second">10s</span></label
+                >
+                <input
+                  type="range"
+                  name="text-speed"
+                  id="text-speed"
+                  min="0"
+                  max="120"
+                  value="10"
+                />
+              </div>
+              <div>
+                <label for="text-blink"
+                  >Text Blink : <span id="text-blink-second">0s</span></label
+                >
+                <input
+                  type="range"
+                  name="text-blink"
+                  id="text-blink"
+                  min="0"
+                  max="2"
+                  step="0.1"
+                  value="0"
+                />
+              </div>
+              <div>
+                <label for="text-direction">Text Direction</label>
+                <select name="text-direction" id="text-direction">
+                  <option value="Left-to-Right">Left to Right</option>
+                  <option value="Right-to-Left">Right to Left</option>
+                </select>
+              </div>
+              <div>
+                <label for="transition-style">Transition Style</label>
+                <select name="transition-style" id="transition-style">
+                  <option value="normal">Normal</option>
+                  <option value="wave">Wave</option>
+                  <option value="hopping">Hopping</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="btn-submit">
+            <form id="reset-form">
+              <button id="reset_btn" class="btn-submit non-imp-btn btn-1">
+                Reset <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </form>
+            <a href="../html/text-run.html"
+              ><button id="run-b" class="btn-submit non-imp-btn btn-2">
+                Run <i class="fa-solid fa-play"></i></button
+            ></a>
+            <button class="btn-submit non-imp-btn btn-3">
+              Save <i class="fa-solid fa-floppy-disk"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="icon-social-media">
+          <h1>
+            Let's connect with <span class="pacifico-regular">Texto</span>
+          </h1>
+          <ul>
+            <li>
+              <i class="fa-brands fa-facebook"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-instagram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-threads"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-telegram"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-youtube"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-x-twitter"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="term-privacy">
+          <ul>
+            <li>Term & Service</li>
+            <li>Privacy & Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+        <div class="subscribe-div">
+          <h2>Support Us by entering your email to subscribe</h2>
+          <input
+            type="email"
+            name="mail"
+            id="mail-subscribe"
+            placeholder="Enter your email here"
+          />
+          <button class="non-imp-btn">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/function-edit.js"></script>
+  </body>
+</html>

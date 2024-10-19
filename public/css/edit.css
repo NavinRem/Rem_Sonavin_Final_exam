@@ -1,0 +1,261 @@
+:root {
+  --theme-btn-width: 100px;
+  --theme-btn-height: 30px;
+  --theme-btn-margin: 5px 10px;
+  --border-rad-edit: 5px;
+  --slider-col-range: violet;
+  --thumb-col-range: rebeccapurple;
+  --preview-screen-width: 595px;
+}
+
+.edit-display {
+  display: flex;
+  padding: 5px 5px 0 5px;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.text-input textarea {
+  resize: none;
+  height: 300px;
+  border-radius: var(--border-rad-edit);
+  padding: 5px;
+  border: 2px solid;
+}
+.text-input textarea:focus {
+  outline: 2px solid darkmagenta;
+  border: none;
+}
+.submit-btn {
+  width: 80px;
+  padding: 5px 10px;
+  margin: 5px;
+}
+.edit-part {
+  min-width: 500px;
+  /* width: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+/* marquee {
+  width: 100%;
+  background-color: aliceblue;
+  padding: 10px 0;
+  font-size: 12px;
+  border-radius: 10px;
+  border: 2px solid;
+} */
+
+.text-preview {
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  overflow: hidden;
+  background-color: aliceblue;
+  border: 2px solid;
+  border-radius: var(--border-rad-edit);
+  white-space: nowrap;
+  width: 100%;
+  margin: 5px 0;
+}
+#text-run {
+  position: relative;
+  padding: 5px;
+  width: max-content;
+  animation: scrolltext-LR 10s linear infinite;
+  font-size: 12px;
+  /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+
+#run-text {
+  animation: blink-text 0s step-start infinite;
+}
+
+@keyframes blink-text {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes scrolltext-LR {
+  from {
+    transform: translateX(-100%);
+    /* left: -100%; */
+  }
+
+  to {
+    transform: translateX(100vw);
+    /* transform: translateX(calc(100vw + 50%)); */
+    /* transform: translateX(${width_run_text}); */
+    /* transform: translateX(100%); */
+    /* left: 100%; */
+  }
+}
+
+#theme-decor {
+  margin: 5px 0;
+  border: 1px solid aliceblue;
+  border-radius: var(--border-rad-edit);
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Use overflow-x to enable horizontal scrolling */
+}
+/* Hide scrollbar for WebKit-based browsers */
+#theme-decor::-webkit-scrollbar {
+  display: none;
+}
+#theme-decor button {
+  flex: 0 0 auto; /* Allow buttons to maintain their original width */
+  border-radius: var(--border-rad-edit);
+  border: none;
+  font-size: 1rem;
+  width: var(--theme-btn-width);
+  height: var(--theme-btn-height);
+  margin: var(--theme-btn-margin);
+}
+#theme-decor button:active {
+  transform: translateY(5px);
+}
+#theme-1 {
+  background-image: linear-gradient(to right, deeppink, red);
+}
+#theme-2 {
+  background-image: linear-gradient(to right, red, orange);
+}
+#theme-3 {
+  background-image: linear-gradient(to right, orange, yellow);
+}
+#theme-4 {
+  background-image: linear-gradient(to right, yellow, rgb(0, 255, 0));
+}
+#theme-5 {
+  background-image: linear-gradient(to right, rgb(0, 255, 0), cyan);
+}
+#theme-6 {
+  background-image: linear-gradient(to right, cyan, dodgerblue);
+}
+#theme-7 {
+  background-image: linear-gradient(to right, dodgerblue, magenta);
+}
+#theme-8 {
+  background-image: linear-gradient(to right, rebeccapurple, fuchsia);
+}
+#theme-9 {
+  background-image: linear-gradient(to right, fuchsia, deeppink);
+}
+#theme-10 {
+  background-image: linear-gradient(to right, deeppink, violet);
+}
+#theme-11 {
+  background-color: lightgrey;
+}
+.edit-tool {
+  background-color: rgba(240, 248, 255, 0.7);
+  display: flex;
+  height: 200px;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: var(--border-rad-edit);
+  justify-content: space-evenly;
+}
+.edit-tool div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.edit-tool div h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+.edit-tool div div {
+  display: flex;
+  flex-direction: row;
+  width: 280px;
+  justify-content: space-between;
+}
+
+form {
+  display: flex;
+}
+
+.btn-submit {
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+.btn-submit button {
+  width: 70px;
+  margin: 5px;
+  color: aliceblue;
+}
+.btn-submit button:hover {
+  background-color: violet;
+  color: black;
+}
+.btn-1 {
+  background-color: darkred;
+}
+.btn-2 {
+  background-color: green;
+}
+.btn-3 {
+  background-color: blue;
+}
+
+select {
+  padding: 5px;
+  cursor: pointer;
+}
+select option {
+  padding: 5px;
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="range"] {
+  width: 140px; /* set the width to 300px */
+  height: 5px;
+  background-color: var(--slider-col-range); /* set the track color to #ccc */
+  border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: var(--slider-col-range); /* set the track color to #ccc */
+  height: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* remove the default thumb appearance */
+  width: 10px; /* set the thumb width to 20px */
+  height: 10px; /* set the thumb height to 20px */
+  border-radius: 50%; /* make the thumb a circle */
+  background-color: #666; /* set the thumb color to #666 */
+  margin-top: -5px;
+  /* background-color: var(--thumb-col-range); set the thumb color to #666 */
+  cursor: pointer; /* change the cursor to a pointer */
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px; /* set the thumb width to 20px */
+  height: 15px; /* set the thumb height to 20px */
+  border-radius: 50%; /* make the thumb a circle */
+  background-color: var(--thumb-col-range); /* set the thumb color to #666 */
+  cursor: pointer; /* change the cursor to a pointer */
+}
