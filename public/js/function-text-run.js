@@ -1,30 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-  function appliedSaveData() {
-    const run_text_disp = document.getElementById("run-text-dis");
-    const text_run_disp = document.getElementById("text-run-dis");
-    const get_text_dis = localStorage.getItem("ele_style");
+  const run_text_disp = document.getElementById("run-text-dis");
+  const text_run_disp = document.getElementById("text-run-dis");
+  const get_text_dis = localStorage.getItem("ele_style");
 
-    if (get_text_dis) {
-      const stylingData = JSON.parse(get_text_dis);
-      // function setTextToDisplay() {
-      run_text_disp.textContent = stylingData.font_text;
-      run_text_disp.style.fontSize = stylingData.font_size;
-      run_text_disp.style.color = stylingData.font_col;
-      run_text_disp.style.fontFamily = stylingData.font_family;
-      run_text_disp.style.backgroundColor = stylingData.bg_color_sol;
-      run_text_disp.style.backgroundImage = stylingData.bg_color_grd;
-      run_text_disp.style.textDecoration = stylingData.font_decor_td;
-      run_text_disp.style.fontStyle = stylingData.font_decor_fs;
-      run_text_disp.style.fontWeight = stylingData.font_decor_fw;
-      run_text_disp.style.animation = stylingData.blinking_text;
-      text_run_disp.style.animation = stylingData.animate_text;
-      //}
-      //setTextToDisplay();
-    } else {
-      console.log("No data storage");
-    }
+  if (get_text_dis) {
+    const stylingData = JSON.parse(get_text_dis);
+    // function setTextToDisplay() {
+    run_text_disp.textContent = stylingData.font_text;
+    run_text_disp.style.fontSize = stylingData.font_size;
+    run_text_disp.style.color = stylingData.font_col;
+    run_text_disp.style.fontFamily = stylingData.font_family;
+    run_text_disp.style.backgroundColor = stylingData.bg_color_sol;
+    run_text_disp.style.backgroundImage = stylingData.bg_color_grd;
+    run_text_disp.style.textDecoration = stylingData.font_decor_td;
+    run_text_disp.style.fontStyle = stylingData.font_decor_fs;
+    run_text_disp.style.fontWeight = stylingData.font_decor_fw;
+    run_text_disp.style.animation = stylingData.blinking_text;
+    text_run_disp.style.animation = stylingData.animate_text;
+    //}
+    //setTextToDisplay();
+  } else {
+    console.log("No data storage");
   }
-  appliedSaveData();
 
   document.getElementById("back-button").addEventListener("click", () => {
     window.history.back(); // Navigate to the previous page
